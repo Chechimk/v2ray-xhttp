@@ -21,7 +21,11 @@
         ]
       },
       "streamSettings": {
-        "network": "ws"
+        "network": "xhttp",
+        "xhttpSettings": {
+          "path": "/",
+          "mode": "auto"
+        }
       }
     }
   ],
