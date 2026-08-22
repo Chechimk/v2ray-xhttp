@@ -23,8 +23,16 @@
       "streamSettings": {
         "network": "xhttp",
         "xhttpSettings": {
-          "path": "/",
-          "mode": "auto"
+          "path": "/api/v1/stream",
+          "mode": "stream-up",
+          "xPaddingBytes": "100-1000",
+          "scMaxEachPostBytes": "1000000",
+          "scMinPostsIntervalMs": "30",
+          "scMaxBufferedPosts": 20,
+          "headers": {
+            "Content-Type": "application/octet-stream",
+            "X-Requested-With": "XMLHttpRequest"
+          }
         }
       }
     }
